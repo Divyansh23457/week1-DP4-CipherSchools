@@ -45,7 +45,7 @@ class Solution
      Node * ptr = head;
      Node *prev = NULL;
      while(ptr){
-         if(s.find(ptr->data) == s.end()){
+         if(s.count(ptr->data)==0){
              prev = ptr;
              s.insert(ptr->data);
          }
