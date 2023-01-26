@@ -26,10 +26,10 @@ int main(){
     cout<<"Enter N:";
     cin>>n;
     arr= new int[n];
-    cout<<"Enter values of Rotated Sorted Array:";
+    cout<<"Enter values of Array:";
     for(int i=0;i<n;i++) cin>>arr[i];
     vector<vector<int>> ans = threeSum(arr,n);
-    cout<<"The triplets are: \n";
+    cout<<"The triplets with sum 0 are: \n";
     for(auto i: ans){
         for(int j:i)
             cout<<j<<" ";
